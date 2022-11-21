@@ -2,7 +2,7 @@
 // (делится ли оно на два без остатка).
 
 Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine()); // Конвертирует (переводит) символы в цифры
 
 int Div = number % 2;
 

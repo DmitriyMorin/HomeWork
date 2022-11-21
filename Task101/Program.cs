@@ -5,7 +5,7 @@ int max = 0;
 int min = 0;
 
 Console.Write("Введите первое число: ");
-int NumberA = Convert.ToInt32(Console.ReadLine());
+int NumberA = Convert.ToInt32(Console.ReadLine()); // // Конвертирует (переводит) символы в цифры
 
 Console.Write("Введите второе число: ");
 int NumberB = Convert.ToInt32(Console.ReadLine());
