@@ -3,7 +3,7 @@
 
 
 
-Console.Write("Введите число: ");
+Console.Write("Введите трезначное число: ");
 int number = Convert.ToInt32(Console.ReadLine()); 
 
 int B = (number / 10) % 10;
