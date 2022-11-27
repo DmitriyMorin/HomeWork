@@ -32,7 +32,7 @@ public static class Library
     }
   }
 
-//// нахождение всех положительных элементов массива
+// нахождение всех положительных элементов массива
   public static int SumPositive(int[] numbers)
   {
     int result = 0;
@@ -55,5 +55,38 @@ public static class Library
     }
     return result;
   }
+
+//возведения числа в натуральную степень
+ public static int NaturalDegree(int numberA, int numberB)
+{
+  int result = 1;
+  int i = 1;
+while (i <= numberB)
+ {
+    result = result * numberA;
+    i++;
+ }
+ return result;
+}
+
+//Сумма введеных чисел
+
+public static int SumNumber(int number)
+{
+ int count = Convert.ToString(number).Length;
+ int advance = 0;
+ int result = 0;
+ int i = 0;
+
+    while (i < count)
+    {
+      advance = number - number % 10;
+      result = result + (number - advance);
+      number = number / 10;
+      i++;
+    }
+   return result;
+}
+
 
 }
