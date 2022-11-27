@@ -69,7 +69,7 @@ while (i <= numberB)
  return result;
 }
 
-//Сумма введеных чисел
+//выдаёт сумму цифр в числе.
 
 public static int SumNumber(int number)
 {
