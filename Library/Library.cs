@@ -144,4 +144,71 @@ public static int[] Solution(int[] collectionElements, int evenCounts)
   return items;
 }
 
+// метод удаления пробелов из строки 
+public static string RemovingSpaces (string series)
+{
+  string seriesNew = "";
+  for (int i = 0; i < series.Length; i++)
+  {
+    if (series[i] != ' ') 
+    {
+      seriesNew += series[i];
+    }
+  }
+  return seriesNew;
+}
+
+// метод проверки на правильность ввода 
+public static void СheckNumber2 (int  series)
+ {
+
+      if (series == '0'||series == '1'||series == '2'
+      ||series == '3'||series == '4'||series == '5'||series == '6'
+      ||series == '7'||series == '8'||series == '9'||series == ','
+      ||series == '-')
+      {
+
+      }
+        else 
+      {
+          Console.WriteLine($"Ошибка ввода  символа. Вводи цифры.");
+
+      }
+ }
+
+// метод замены элементов массива на противоположный
+public static int[] Inverse(int[] input)
+  {
+    int size = input.Length;
+    int[] output = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+      output[i] = -input[i];
+    }
+    return output;
+  }
+/*public static void Inverse(int[] input)
+  {
+    int size = input.Length;
+    for (int i = 0; i < size; i++)
+    {
+      input[i] = -input[i];
+    }
+  }*/
+
+// метод поиска заданного числа в массиве
+public static bool FindElement1(int[] col, int find)
+  {
+    int size = col.Length;
+    for (int i = 0; i < size; i++)
+    {
+      if (col[i] == find) return true;
+    }
+    return false;
+  }
+ /*public static bool FindElement2(int[] col, int find)
+  {
+        return Array.IndexOf(col, find) != -1;
+  }*/
+
 }
