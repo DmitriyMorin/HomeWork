@@ -88,7 +88,7 @@ public static int SumNumber(int number)
 }
 
 // Метод, считывающий число от пользователя из консоли
-public static int GetNumber(string text)
+ public static int GetNumber(string text)
 {
   Console.Write(text);
   int value = Convert.ToInt32(Console.ReadLine());
@@ -210,5 +210,13 @@ public static bool FindElement1(int[] col, int find)
   {
         return Array.IndexOf(col, find) != -1;
   }*/
+
+// метод нахождения количество вхождений каждого числа
+public static int[] NumberOccurrences(int[] data)
+{
+  int[] count = new int [100 + 1];
+  for (int i = 0; i < data.Length; i++) count[data[i]]++;
+  return count;
+}
 
 }
