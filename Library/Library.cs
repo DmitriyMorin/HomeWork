@@ -239,4 +239,16 @@ public static int[] NumberOccurrences(int[] data)
   return count;
 }
 
+// Метод, нахождения сумм элементов, стоящих на нечётных позициях.
+public static int SumOfPositionsOdd(int[] numbers)
+{
+ int result = 0;
+ int size = numbers.Length;
+ for (int i = 0; i < numbers.Length; i+=2)
+  {
+    result = result + numbers[i];
+  }
+  return result;
+}
+
 }
