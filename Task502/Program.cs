@@ -8,5 +8,5 @@ int[] numbers = new int[size];
 FillArrayRandomNumber(numbers);
 Console.WriteLine("Вот наш массив: ");
 PrintBad(numbers);
-int result = (numbers);
+int result = SumOfPositionsOdd(numbers);
 Console.WriteLine($"{result} сумма");
