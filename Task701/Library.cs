@@ -19,7 +19,7 @@ public static class Library
   }
   return triangle;
 }
-public static void PrintTriangle(int[,] triangle)
+  public static void PrintTriangle(int[,] triangle)
 {
   int row = triangle.GetLength(0);
   for (int i = 0; i < row; i++)
@@ -42,7 +42,7 @@ public static void PrintTriangle(int[,] triangle)
 
 }
 
-public static int[] GetKoeff(int[,] tr, int pow)
+  public static int[] GetKoeff(int[,] tr, int pow)
 {
   int[] row = new int[pow + 1];
   for (int i = 0; i <= pow; i++)
@@ -52,5 +52,5 @@ public static int[] GetKoeff(int[,] tr, int pow)
   return row;
 }
 
-
+  
 }
