@@ -2,9 +2,13 @@
 Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. 
 Выполнить с помощью рекурсии.*/
 
-void foo(int n)
+
+int n;
+Console.Write("Введи значение от: ");
+n = Convert.ToInt32(Console.ReadLine());
+void foo(int i)
 {
-    if (n != 8) foo(n + 1);
-    System.Console.Write($"{n} ");
+    if (n != i) foo(i + 1);
+    System.Console.Write($"{i} ");
 }
 foo(1);
